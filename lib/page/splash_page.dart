@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -14,7 +13,7 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
-    Timer(Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 3), () {
       Navigator.pushNamedAndRemoveUntil(
           context, ('/home-page'), (route) => false);
     });
@@ -34,8 +33,8 @@ class _SplashPageState extends State<SplashPage> {
             Container(
               width: w,
               height: h,
-              decoration: BoxDecoration(
-                  image: const DecorationImage(
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage('assets/Splash.png'),
               )),

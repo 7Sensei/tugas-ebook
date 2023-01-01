@@ -1,4 +1,4 @@
-package com.example.tugas_appbook
+package com.rafiabadi.tugas_appbook
 
 import io.flutter.embedding.android.FlutterActivity
 

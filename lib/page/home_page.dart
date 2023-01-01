@@ -16,7 +16,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     controller.addListener(() {
       setState(() {
@@ -36,7 +35,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
-        title: Text('Black Clover From MangaPlus'),
+        title: const Text('Black Clover From MangaPlus'),
       ),
       body: PageView.builder(
           controller: controller,
